@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Babel fish</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Babel_fish" />
+      <meta name="keywords" content="Glossário,tecnologia,natureza.">
+      <meta name="description" content="Glossário em inglês sobre tecnologia e preservação da natureza." />
+      <link rel="icon" href="imagens_referencia/favicon_babel_fish.png" type="image/png">
+      <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <main>
+    <header>
+      <nav class="nav_topo">
+            <a class="a-menu" href="index.html">HOME</a>
+            <a class="a-menu" href="temas.html">GLOSSÁRIO</a>
+            <a class="a-menu" href="#">CONTATOS</a>
+            </nav>
+    </header>
+    <body id="fundo_pag">
+         <section class="container_equipe">
+          <div class="card_equipe">
+            <img class="imagem-card" src="imagens_referencia/peixe_amarelo.jpeg" alt="Descrição da Imagem">
+           <div class="content"><h3>Ester Alves</h3>  
+           <p>No desenvolvimento do site, eu ajudei a montar a landing page, que é a página inicial com informações sobre o projeto. Eu também editei as imagens do site, usando ferramentas como Photoshop e GIMP. Eu fiz o redimensionamento e o recorte das imagens, para que elas ficassem adequadas e profissionais. Essas foram as minhas contribuições para o site Babel fish, que eu espero que seja útil e interessante.</p></div>
+            </div>
+          <div class="card_equipe">
+           <img class="imagem-card" src="imagens_referencia/peixe_vermelho.jpeg"alt="Descrição da Imagem">
+           <div class="content">
+            <h3>Marcus Oliveira</h3>  
+            <p>No projeto do site, fui responsável por criar a estrutura principal utilizando HTML, garantindo uma base sólida e acessível para toda a plataforma. Além disso, desenvolvi funcionalidades interativas utilizando JavaScript, agregando dinamismo e melhorando a experiência do usuário. Para garantir uma apresentação visual atrativa e consistente, dediquei-me à estilização do site utilizando CSS, harmonizando elementos e garantindo uma interface agradável e responsiva em diferentes dispositivos.</p>
+           </div>
+           
+          </div>
+          <div class="card_equipe">
+           <img class="imagem-card" src="imagens_referencia/peixe_rosa.jpeg" alt="Descrição da Imagem">
+           <div class="content">
+            <h3>Khaylane Falcão </h3>  
+          <p>Eu realizei um projeto de pesquisa sobre 60 palavras de dois temas diferentes: tecnologia e natureza. Para cada tema, eu selecionei 30 palavras e busquei os seus significados em diversas fontes. O propósito foi enriquecer o vocabulário e aprender mais sobre essas duas áreas do saber. Algumas das palavras que eu estudei foram: códigos, bug, fotossíntese, evolução, etc.</p>
+          </div>
+           
+          </div>
+         </section>
+         
+         <div class="sessao_comentarios">
+          <h3>Gostou da página? Contribua com nosso trabalho e deixe seu feedback!</h3></br>
+
+            <p>Digite o seu nome:</p>
+      Nome: <input type="text" id="nome" onblur="veriNome()">
+      <button id="ok" onclick="">Ok</button>	
+      
+      <p>Digite o seu telefone:</p>
+      Telefone: <input type="text" id="telefone" onblur="veriTelefone()">
+      <button id="ok" onclick="">Ok</button>
+      
+      <p>Digite o seu e-mail:</p>
+      e-mail: <input type="text" id="email" onblur="veriEmail()">	
+      <button id="ok" onclick="">Ok</button>
+      
+          <p>Digite a sua mensagem:</p>
+          Mensagem: <input type="text" id="mensagem" onblur="veriMensagem()">
+          <button id="ok" onclick="">Ok</button>	
+         
+         </div>
+        </body>
+        <footer>Desenvolvido por Babel fish</footer>
+      </main>
+    <script language="javascript">
+    
+     function veriNome(){/*Função nome*/
+      var nome = document.getElementById("nome").value;
+       if(nome == "" || nome.length == 0){
+        alert("Preencha o campo com seu nome!");
+        }
+        else if(nome.length < 5){
+        alert("O nome deve ter pelo menos 5 caracteres!");
+        }
+        else{
+        telefone
+        alert("O nome digitado foi " + nome);
+        }
+         }
+     function veriTelefone(){ /*Função telefone*/
+      var telefoneD= document.getElementById("telefone").value;
+        }
+     function veriEmail(){
+      var email = document.getElementById("email").value;
+       if(email == "" || email.length == 0){
+       alert("Preencha o campo com seu e-mail!");
+       }
+       else if(email.length < 5){
+       alert("O e-mail deve ter pelo menos 5 caracteres!");
+       }
+       else{
+       alert("O e-mail digitado foi " + email);
+       }
+        }
+     function veriMensagem(){ // função mensagem
+      var mensagemD= document.getElementById("mensagem").value;
+       if(mensagemD == "" || mensagemD.length == 0){
+       alert("Preencha o campo com a sua mensagem!");
+       }
+       else if(mensagemD.length < 20 && mensagemD.length > 200){
+       alert("O nome deve ter pelo menos 5 caracteres!");
+        }
+       else{
+       alert("Sua mensagem foi:   " + mensagemD);
+        }
+         }
+    </script>
+   
+
+</html>
+    

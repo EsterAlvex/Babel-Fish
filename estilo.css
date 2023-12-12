@@ -1,0 +1,454 @@
+footer {
+  background-color: #33ccff;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Alinha o texto horizontalmente */
+}
+
+  .nav_topo {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;
+    background-color: #33ccff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px #000;
+    position: relative;
+  }
+
+
+  .nav_item {
+    /* Adicione estilos conforme necessário para os itens do navegador */
+    margin: 0 10px; /* Adiciona margens entre os itens (opcional) */
+  }
+main{
+  min-width: 320px;
+  max-width: 1366px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:#000;
+  margin-top: 1fr;
+  margin-left: 1fr;
+  margin-right: 1fr;
+
+}
+.a-menu{
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.a-menu:link,.a-menu:visited{
+    color:#000 ;
+}
+
+.a-menu:hover, .a-menu:active{
+    color: purple;
+}
+a{
+    font: 1.2rem Open Sans, sans-serif;
+    text-decoration: none;
+}
+
+
+section h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #555;
+}
+section p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #777;
+}
+
+
+
+#fundo_pag {
+background-color: #0099ff ; 
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////*
+
+/*Landing page*/
+#banner_landing {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  background-image: linear-gradient(to right, #33ccff, #00ff55);
+  width: 100%; /* Ocupa toda a largura da tela */
+  max-width: 1366px; /* Define uma largura máxima para o banner */
+  height: 375px;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px #000;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  
+  border: 1px solid #000; /* borda para a div */
+  overflow: hidden; /* esconde qualquer conteúdo que exceda as bordas */
+}
+.card_landing {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(to right, #33ccff, #00ff55);
+  width: 1060px;
+  height: 300px;
+  margin-left: 110px;
+  margin-top: 20px;
+  border-radius: 70px;
+  box-shadow: 0 8px 16px #000;
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagem-card {
+  width: 100%; /* Ajusta o tamanho da imagem */
+  max-height: 60%; /* Altura máxima para a imagem */
+  overflow: hidden; /* Esconde o excesso da imagem */
+  border-top-left-radius: 70px; /* Mantém o mesmo raio de borda superior esquerda */
+  border-top-right-radius: 70px; /* Mantém o mesmo raio de borda superior direita */
+}
+
+.imagem-card img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.texto-card {
+  padding: 20px; /* Espaçamento interno para o texto */
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////*
+
+/*Página do glossário */
+
+.container_1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinha a imagem à direita */
+  background-image: linear-gradient(to right, #33ccff, #00ff55);
+  width: 1060px;
+  height: 380px;
+  margin-left: 80px;
+  margin-top: 20px;
+  border-radius: 70px;
+  box-shadow: 0 8px 16px #000;
+  transition: 0.5s;
+  overflow: hidden; /* Garante que a imagem não ultrapasse as bordas */
+}
+
+.imagem {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+  align-self: flex-start;
+  /* Adicione outras propriedades necessárias para a imagem, como altura, largura, etc. */
+}
+
+
+.container_1:hover{
+  transform: scale(1.01);
+  animation-duration: 1s;
+
+}
+
+.container_2 {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right,#33ccff,  #00ff55);
+  width: 1060px;
+  height: 400px;
+  margin-left:80px ;
+  margin-top: 20px;
+  border-radius: 70px;
+  box-shadow: 0 8px 16px #000;
+  transition: 0.5s;
+}
+
+.container_2:hover{
+  transform: scale(1.01);
+  animation-duration: 1s;
+
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image img {
+  max-width: 100%;
+  height: 400px;
+  align-self: flex-start; 
+}
+
+/*///////////////////////////////////////////////////////////////////////////*
+
+/* Cards do glossário de tecnologia*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card_tecno {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: calc(100% - 200px); /* Limita a largura máxima do card considerando o afastamento */
+  width: auto; /* Permite que o card se ajuste automaticamente ao conteúdo */
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 100px; /* Afasta o card 100px da borda esquerda */
+  margin-right: 100px; /* Afasta o card 100px da borda direita */
+  position: relative;
+  background-color: #990099;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px #000;
+  overflow: hidden;
+  margin: 20px auto;
+  border: 1px solid  #4d004d; /* borda para a div */
+
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  position: relative; /* Adicionando position: relative para alinhar o texto */
+}
+
+.content p {
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.image {
+  padding: 0;
+  position: relative; /* Adicionando position: relative para alinhar a imagem */
+}
+
+.card_tecno .image img {
+  margin-left: 2px;
+  solid: #4d004d;
+  max-width: 100%;
+  height: auto;
+  display: block; /* Garantir que a imagem seja exibida corretamente */
+}
+
+.text h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.card_tecno .text1 {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.card_tecno .text2 {
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #990099;
+  box-sizing: border-box;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Garante que o texto sobreponha a imagem */
+  overflow-y:scroll; /* Adiciona um overflow-y para permitir rolar o texto verticalmente */
+  max-height: 100%; /* Limita a altura máxima do contêiner ao tamanho do card */
+  padding-left: 50px; /* Afasta o texto 2 da borda esquerda */
+  padding-right: 5px; /* Afasta o texto 2 da imagem */
+  padding-top: 5px; /* Define o afastamento de 5px do topo */
+  margin-top: 0; /* Removido para evitar espaço adicional no topo */
+}
+
+.card_tecno:hover .text1,
+.card_tecno:hover .text2 {
+  opacity: 1;
+  transition: 1s;
+}
+
+.card_tecno:hover {
+  width: calc(630px + 200px); /* Largura expandida ao passar o mouse */
+}
+/*///////////////////////////////////////////////////////////////////////////*
+
+/* Cards do glossário de ecologia*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card_ecolog {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: calc(100% - 200px); /* Limita a largura máxima do card considerando o afastamento */
+  width: auto; /* Permite que o card se ajuste automaticamente ao conteúdo */
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 100px; /* Afasta o card 100px da borda esquerda */
+  margin-right: 100px; /* Afasta o card 100px da borda direita */
+  position: relative;
+  background-color: #990099;
+  border: 2px solid #4d004d;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px #000;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  position: relative; /* Adicionando position: relative para alinhar o texto */
+}
+
+.content p {
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.image {
+  padding: 0;
+  position: relative; /* Adicionando position: relative para alinhar a imagem */
+}
+
+.card_ecolog .image img {
+  margin-left: 2px;
+  solid: #4d004d;
+  max-width: 100%;
+  height: auto;
+  display: block; /* Garantir que a imagem seja exibida corretamente */
+}
+
+.text h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.card_ecolog .text1 {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.card_ecolog .text2 {
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #990099;
+  box-sizing: border-box;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Garante que o texto sobreponha a imagem */
+  overflow-y:scroll; /* Adiciona um overflow-y para permitir rolar o texto verticalmente */
+  max-height: 100%; /* Limita a altura máxima do contêiner ao tamanho do card */
+  padding-left: 50px; /* Afasta o texto 2 da borda esquerda */
+  padding-right: 5px; /* Afasta o texto 2 da imagem */
+  padding-top: 5px; /* Define o afastamento de 5px do topo */
+  margin-top: 0; /* Removido para evitar espaço adicional no topo */
+}
+
+.card_ecolog:hover .text1,
+.card_ecolog:hover .text2 {
+  opacity: 1;
+  transition: 1s;
+}
+
+.card_ecolog:hover {
+  width: calc(630px + 200px); /* Largura expandida ao passar o mouse */
+  
+}
+
+/*///////////////////////////////////////////////////////////////////////////*
+
+/*Página sobre a equipe e sessão comentários*/
+
+.container_equipe {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+    }
+
+.card_equipe{
+  display: inline-block;
+  justify-content: center;
+  width: 350px;
+  height: 658px;
+  margin-top: 20px;
+  position: relative;
+  background-image: linear-gradient(to bottom,#33ccff,  #00ff55);
+  border: 2px solid #4d004d;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px #000;
+  transition: 0.5s;
+  overflow: hidden; /* esconder qualquer conteúdo que ultrapasse as dimensões do card */
+ text-align: center;
+}
+
+
+.sessao_comentarios {
+  width: 1000px;
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  margin-top: 20px;
+  margin-left: auto; /* Afasta o card da borda esquerda */
+  margin-right: auto; /* Afasta o card da borda direita */
+  padding: 20px; /* Adiciona algum espaço interno ao card */
+  background-color: #990099;
+  border: 2px solid #4d004d;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px #000;
+  transition: 0.5s;
+
+}
+
+.imagem-card {
+  width: 100%; /* ocupar toda a largura do card */
+  height: auto; /* manter a proporção original da imagem */
+  display: block; /* ajustar o comportamento do elemento como bloco */
+  object-fit: cover; /* fazer a imagem preencher o contêiner mantendo a proporção */
+  object-position: top; /* alinhar a imagem no topo do contêiner */
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////*
